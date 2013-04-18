@@ -4,7 +4,7 @@ var tests = [
   'tests/app/bestPractices',
   //'tests/app/arrays',
   'tests/app/objects',
-  //'tests/app/functions',
+  'tests/app/functions',
   //'tests/app/modules',
   //'tests/app/flowControl',
   //'tests/app/logicalOperators',
