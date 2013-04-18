@@ -32,18 +32,6 @@ You can also run (most of) the tests on the command line:
 
 The command line runner is a work in progress; contributions welcome :)
 
-## I want to contribute tests; what do I do?
-
-Submit a pull request! The tests are currently loosely organized by topic, so
-you should do your best to add tests to the appropriate file in `tests/app`, or
-create a new file there if you don't see an appropriate one. If you do create
-a new file, make sure to add it to `tests/runner.js`, and to add a stub for the
-solution to the corresponding file in `app/`. Finally, it would be great if you
-could update the [answers](https://github.com/rmurphey/js-assessment-answers)
-as well.
-
-Any substantial contributions will be duly credited in the readme, as well as
-of course in the git commit log.
 
 ### Data-driven tests
 
@@ -57,27 +45,7 @@ stuff you'd find useful, you can put it in the `lib` directory.
 
 ## I want to see the answers!
 
-First, bear in mind that looking up the answers is going to teach you a whole
-lot less than you'll learn by working on the tests, even if you occasionally get
-stuck. I'd recommend only looking at the answers once you have the tests
-passing, to see if there's another way you could have approached the
-problem. When you're ready to look at the answers, you can find them
-[here](https://github.com/rmurphey/js-assessment-answers); I'll do my best to
-keep them up to date.
-
-## I hate \<some technology you've chosen\>
-
-This repo uses [RequireJS](http://requirejs.org) for dependency management and
-[Mocha](http://visionmedia.github.com/mocha/) and [expect.js](https://github.com/LearnBoost/expect.js/blob/master/README.md)
-for the tests themselves. It uses the BDD style for authoring tests. If this
-doesn't suit you, please fork away, or, better, submit a pull request that lets
-this be more flexible than it currently is.
-
-# Todos
-
-There are a number of things that would make this project better; check out the
-[issues](https://github.com/rmurphey/js-assessment/issues) for details, pull
-requests welcome!
+Dont cheat please. Nothing good will come out of it.
 
 # License
 
