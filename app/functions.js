@@ -1,41 +1,19 @@
-if (typeof define !== 'function') { var define = require('amdefine')(module); }
+if ( typeof define !== 'function') {
+    var define = require('amdefine')(module);
+}
 
 define(function() {
-  return {
-    argsAsArray : function(fn, arr) {
+    return {
+        functionFunction: function(str) {
 
-    },
+        },
 
-    speak : function(fn, obj) {
+        makeClosures: function(arr, fn) {
 
-    },
+        },
 
-    functionFunction : function(str) {
+        useArguments: function() {
 
-    },
-
-    makeClosures : function(arr, fn) {
-
-    },
-
-    partial : function(fn, str1, str2) {
-
-    },
-
-    useArguments : function() {
-
-    },
-
-    callIt : function(fn) {
-
-    },
-
-    partialUsingArguments : function(fn) {
-
-    },
-
-    curryIt : function(fn) {
-
-    }
-  };
+        }
+    };
 });
