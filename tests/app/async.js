@@ -10,16 +10,15 @@ define(['app/async'], function(answers) {
     describe('async behavior', function() {
 
         it('you should understand how to use promises to handle asynchronicity', function(done) {
-            var flag = false;
             var finished = 0;
             var total = 2;
 
             function finish(done) {
-                flag = true;
                 if (++finished === total) {
                     done();
                 }
             }
+
 
             answers.async(true).then(function(result) {
                 expect(result).to.eql(true);
@@ -30,7 +29,13 @@ define(['app/async'], function(answers) {
                 expect(result).to.eql('success');
                 finish(done);
             });
+        });
 
+        it('you should be asynchronuous', function() {
+            var flag = false;
+            answers.async(true).then(function(result) {
+                flag = true;
+            });
             expect(flag).to.eql(false);
         });
 
