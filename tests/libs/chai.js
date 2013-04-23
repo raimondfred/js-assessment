@@ -3131,7 +3131,7 @@
         return html;
       }
     };
-
+      
     // Returns true if object is a DOM element.
     var isDOMElement = function (object) {
       if (typeof HTMLElement === 'object') {

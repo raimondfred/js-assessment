@@ -1,7 +1,6 @@
 /*globals mocha:true */
 var tests = [
     'tests/app/bestPractices',
-    'tests/app/async',
     'tests/app/objects',
     'tests/app/functions',
     'tests/app/recursion'

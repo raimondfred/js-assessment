@@ -8,26 +8,26 @@ if ( typeof expect !== 'function') {
 
 define(['app/async'], function(answers) {
     describe('async behavior', function() {
+
         it('you should understand how to use promises to handle asynchronicity', function(done) {
             var flag = false;
             var finished = 0;
             var total = 2;
 
             function finish(done) {
+                flag = true;
                 if (++finished === total) {
                     done();
                 }
             }
 
             answers.async(true).then(function(result) {
-                flag = result;
-                expect(flag).to.eql(true);
+                expect(result).to.eql(true);
                 finish(done);
             });
 
             answers.async('success').then(function(result) {
-                flag = result;
-                expect(flag).to.eql('success');
+                expect(result).to.eql('success');
                 finish(done);
             });
 
@@ -36,8 +36,7 @@ define(['app/async'], function(answers) {
 
         it('you should be able to receive data from the server and manipulate it', function(done) {
             var url = '/data/testdata.json';
-
-            answers.manipulateRemoteData(url).then(function(result) {
+            answers.manipulateRemoteData(url).done(function(result) {
                 expect(result).to.have.length(5);
                 expect(result.join(' ')).to.eql('Adam Alex Matt Paul Rebecca');
                 done();
