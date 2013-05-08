@@ -19,7 +19,6 @@ define(['app/async'], function(answers) {
                 }
             }
 
-
             answers.async(true).then(function(result) {
                 expect(result).to.eql(true);
                 finish(done);
@@ -37,15 +36,6 @@ define(['app/async'], function(answers) {
                 flag = true;
             });
             expect(flag).to.eql(false);
-        });
-
-        it('you should be able to receive data from the server and manipulate it', function(done) {
-            var url = '/data/testdata.json';
-            answers.manipulateRemoteData(url).done(function(result) {
-                expect(result).to.have.length(5);
-                expect(result.join(' ')).to.eql('Adam Alex Matt Paul Rebecca');
-                done();
-            });
         });
     });
 });

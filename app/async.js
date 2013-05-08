@@ -5,11 +5,7 @@ if ( typeof define !== 'function') {
 define(['jquery'], function($) {
     return {
         async: function(value) {
-
-        },
-
-        manipulateRemoteData: function(url) {
-
+            
         }
     };
 });
